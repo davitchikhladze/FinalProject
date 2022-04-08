@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Slabo 27px';
+    src: url('Slabo27px-Regular.eot');
+    src: url('Slabo27px-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Slabo27px-Regular.woff2') format('woff2'),
+        url('Slabo27px-Regular.woff') format('woff'),
+        url('Slabo27px-Regular.svg#Slabo27px-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
