@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRAVEL AGENCY</title>
+    <title>TRAVEL AGENCY</title>  
     <script src="https://kit.fontawesome.com/b98a689406.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,7 +18,7 @@
             <img class="logo" src="images/3127363.png" alt="logo">
             <a class="header-p" href="#home"><span class="header-span">TRAVEL</span> AGENCY</a>
             </div>
-            <nav class="navigation">
+            <nav class="navigation" id="navigation">
                 <ul class="nav-ul">
                     <li>
                         <a class="nav-li" href="#home">Home</a>
@@ -34,8 +34,9 @@
                     </li>
                 </ul>
             </nav>
-            <div class="burger">
+            <div class="burger" id="bar"> 
                 <i class="fa-solid fa-bars"></i>
+
             </div>
         </div>
     </header>
@@ -43,42 +44,35 @@
         <div class="relative">
             <img class="main-img" src="images/ishan-seefromthesky-Fj_39H4NeOo-unsplash.jpg" alt="image">
             <h1 class="main-h">TRAVEL TO EXPLORE</h1>
-            <div class="main-div">
-                <div class="little-div1">
-                    <p class="top-p">Where You Want to go</p>
-                    <div class="search-div">
-                        <img class="search" src="images/search.png" alt="logo">
-                        <p class="below-p">Search Your Location</p>
-                    </div>
+            <form class="main-div" action="/action-page.php">
+                <div class="form-wraper">
+                <label class="label1" for="where">Where You Want to go</label><br>
+                <input class="input-form" type="text" id="where" placeholder="Search Your Location"> <br>
                 </div>
-                <div class="divider"></div>
-                <div class="little-div2">
-                    <p class="top-p">Check-in</p>
-                    <p class="below-p">Add Date</p>
+                <div class="form-wraper">
+                <label class="label1" for="check-in">Check-in</label><br>
+                <input class="input-form" type="date" id="check-in"> <br>
                 </div>
-                <div class="divider2"></div>
-                <div class="little-div3">
-                    <p class="top-p">Check-out</p>
-                    <p class="below-p">Add Date</p>
+                <div class="form-wraper"> 
+                <label class="label1" for="check-out">Check-out</label><br>
+                <input class="input-form" type="date" id="check-out"> <br>
                 </div>
-                <div class="little-div4">
-                    <p class="explore">Explore Now</p>
-                </div>
+                <button class="btn-search" type="submit" value="search"> Search </button>
+            </form>
             </div>
-        </div>
     </section>
     <section>
             <div class="section2">
                 <div class="section-inside">
                     <div class="section-inside1">
-                        <img class="section2-img" src="images/Path 77989.svg" alt="logo image">
+                        <img class="section2-img" src="images/Path77989.svg" alt="logo image">
                     </div>
                     <p class="section2-p1">Get Best Prices </p>
                     <p class="section2-p2">Pay through our application and save thousands and get amazing rewards </p>
                 </div>
                 <div class="section-inside">
                     <div class="section-inside1">
-                        <img class="section2-img" src="images/Covid Safe.svg" alt="logo image">
+                        <img class="section2-img" src="images/CovidSafe.svg" alt="logoimage">
                     </div>
                     <p class="section2-p1">Covid Safe</p>
                     <p class="section2-p2">have all the precaution for a corvid 
@@ -86,7 +80,7 @@
                 </div>
                 <div class="section-inside">
                     <div class="section-inside1">
-                        <img class="section2-img" src="images/Path 77997.svg" alt="logo image">
+                        <img class="section2-img" src="images/Path77997.svg" alt="logoimage">
                     </div>
                     <p class="section2-p1">Flexible Payment</p>
                     <p class="section2-p2">Enjoy the flexible payment through our 
@@ -94,7 +88,7 @@
                 </div>
                 <div class="section-inside">
                     <div class="section-inside1">
-                        <img class="section2-img" src="images/Nearby.svg" alt="logo image">
+                        <img class="section2-img" src="images/Nearby.svg" alt="logoimage">
                     </div>
                     <p class="section2-p1">Find The Best Near You</p>
                     <p class="section2-p2">Find the best hotels and places to visit 
@@ -335,11 +329,12 @@
             </ul>
         </nav>
         <div class="footer-icons">
-           <i class="fa-brands fa-facebook-square"></i>
-           <i class="fa-brands fa-twitter-square"></i>
-           <i class="fa-brands fa-instagram"></i>
+           <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+           <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+           <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
