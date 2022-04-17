@@ -112,12 +112,14 @@
 .fa-facebook-square {
     font-size: 35px;
     transition: all 0.2s linear;
+    color: #4468E2;
 }
 .fa-facebook-square:hover {
     color: #6A89EF;
 }
 .fa-twitter-square {
     font-size: 35px;
+    color: #4468E2;
     transition: all 0.2s linear;
 }
 .fa-twitter-square:hover {
@@ -126,6 +128,7 @@
 .fa-instagram {
     font-size: 35px;
     transition: all 0.2s linear;
+    color: #4468E2;
 }
 .fa-instagram:hover {
     color: #6A89EF;
